@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PoseNet - Camera Feed Demo</title>
+    <style>
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        color: black;
+    }
+    .footer-text {
+        max-width: 100%;
+        font-size: 35px;
+        text-align: right;
+        margin: auto;
+    }
+    @media only screen and (max-width: 600px) {
+      .footer-text, .dg {
+        display: none;
+      }
+    }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div id="info" style='display:none'>
+    </div>
+    <div id="loading">
+        Loading the model...
+    </div>
+
+    <div id='main' style='display:none'>
+        <video id="video" playsinline style=" -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        display: none;
+        ">
+        </video>
+        <canvas id="output" />
+    </div>
+    <div class="footer">
+        <div id="direction" class="footer-text">
+        </div>
+    </div>
+
+    <div  style='display:flex; width: 100%; flex-direction: column; align-items: stretch; justify-content: flex-start;'>
+        <img id="social_media_1" style="height: 1300px;" src="https://petapixel.com/assets/uploads/2018/07/instapreeathead.jpg"/>
+        <img id="social_media_2" style="height: 1300px" src="https://rosssimmonds.com/wp-content/uploads/2015/01/Starbucks-Instagram-2017-1024x628.png"/>
+        <img id="social_media_1" style="height: 1300px" src="https://petapixel.com/assets/uploads/2018/07/instapreeathead.jpg"/>
+        <img id="social_media_2" style="height: 1300px" src="https://rosssimmonds.com/wp-content/uploads/2015/01/Starbucks-Instagram-2017-1024x628.png"/>
+    </div>
+    <script src="camera.js"></script>
+</body>
+
+</html>
