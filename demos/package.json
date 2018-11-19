@@ -10,7 +10,8 @@
   },
   "dependencies": {
     "@tensorflow-models/posenet": "^0.2.2",
-    "@tensorflow/tfjs": "^0.13.0",
+    "@tensorflow/tfjs": "^0.13.5",
+    "babel-polyfill": "^6.26.0",
     "robotjs-wrapper": "^0.9.11",
     "scroll-to-position": "^1.5.3",
     "stats.js": "^0.17.0"
@@ -26,7 +27,7 @@
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-plugin-transform-runtime": "~6.23.0",
-    "babel-polyl": "~6.26.0",
+    "babel-polyfill": "~6.26.0",
     "babel-preset-env": "~1.6.1",
     "babel-preset-es2017": "^6.24.1",
     "clang-format": "~1.2.2",
